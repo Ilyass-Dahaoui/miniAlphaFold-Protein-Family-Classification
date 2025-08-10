@@ -36,6 +36,27 @@ In this project, we leverage recent advances in protein language models—specif
 ### Web Interface for Protein Family Classification
 ![Gradio Interface](interface.png)
 
+## Model Performance (XGBoost trained on 14% of data)
+
+The XGBoost classifier was trained on approximately 14% of the full dataset and evaluated on a validation set of 1000 samples. The detailed classification metrics per protein class are shown below:
+
+| Class | Precision | Recall | F1-score | Support |
+|-------|-----------|--------|----------|---------|
+| a     | 0.86      | 0.90   | 0.88     | 180     |
+| b     | 0.91      | 0.90   | 0.90     | 274     |
+| c     | 0.89      | 0.91   | 0.90     | 257     |
+| d     | 0.75      | 0.78   | 0.76     | 202     |
+| e     | 0.75      | 0.17   | 0.27     | 18      |
+| f     | 0.92      | 0.61   | 0.73     | 18      |
+| g     | 0.88      | 0.86   | 0.87     | 51      |
+
+**Overall metrics:**
+
+- **Accuracy:** 0.86  
+- **Macro Average:** Precision = 0.85, Recall = 0.73, F1-score = 0.76  
+- **Weighted Average:** Precision = 0.86, Recall = 0.86, F1-score = 0.85
+
+This demonstrates strong predictive performance on most classes, with some drop in recall for classes with fewer samples (e.g., class 'e').
 
 - **Robustness Testing:**  
   We assess model generalization on independent test sets with reduced sequence similarity (e.g., 40% similarity threshold datasets) to evaluate robustness against overfitting.

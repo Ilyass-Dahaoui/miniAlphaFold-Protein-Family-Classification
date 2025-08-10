@@ -6,7 +6,7 @@ This project focuses on classifying protein sequences into their respective SCOP
 
 Protein family classification is a fundamental task in bioinformatics that helps understand protein functions, evolutionary relationships, and structural similarities. Traditional methods often rely on sequence alignment, which can be computationally expensive and less effective for distant homologs. 
 
-In this project, we leverage recent advances in protein language models—specifically the ESM-2 model developed by Facebook AI Research—to generate high-quality embeddings that capture the biological and structural features of protein sequences without explicit alignment.
+In this project, we leverage recent advances in protein language models specifically the ESM-2 model developed by Facebook AI Research—to generate high-quality embeddings that capture the biological and structural features of protein sequences without explicit alignment.
 
 ## Key Components
 

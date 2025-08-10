@@ -65,6 +65,12 @@ The XGBoost classifier was trained on approximately 14% of the full dataset and 
 - **Accuracy:** 0.86  
 - **Macro Average:** Precision = 0.85, Recall = 0.73, F1-score = 0.76  
 - **Weighted Average:** Precision = 0.86, Recall = 0.86, F1-score = 0.85
+- 
+### Performance and Resource Usage
+
+- **Memory usage (RAM):** 1617.80 MB  
+- **CPU time used for prediction on validation set:** 0.0550 seconds  
+- **Model size on disk (ROM):** 4.06 MB  
 
 This demonstrates strong predictive performance on most classes, with some drop in recall for classes with fewer samples (e.g., class 'e').
 

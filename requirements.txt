@@ -1,0 +1,13 @@
+torch
+esm
+biopython
+pandas
+tqdm
+numpy
+matplotlib
+scikit-learn
+tensorflow
+xgboost
+psutil
+seaborn
+gradio

@@ -28,7 +28,7 @@ In this project, we leverage recent advances in protein language models—specif
 ## Visualizations and Interface
 
 ### ROC Curves per Class
-![ROC Curves](images/roc_curves.png)
+![ROC Curves](roccurves.png)
 
 ### True Classes vs Predicted Classes
 ![True vs Predicted Classes](images/true_vs_predicted_classes.png)

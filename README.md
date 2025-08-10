@@ -10,8 +10,18 @@ In this project, we leverage recent advances in protein language models specific
 
 ## Key Components
 
-- **Data Preparation:**  
-  Protein sequences are extracted from the SCOPe database, a widely used resource for protein structural classification. We preprocess the data, extract relevant labels such as SCOPe classes and families, and handle sequence filtering to ensure quality inputs.
+### Data Preparation and Experimental Setup
+
+We trained our models using protein sequences from the **Astral SCOPe 2.08 genetic domain sequence subsets**, which are based on **PDB SEQRES** records. This dataset provides curated protein sequences filtered by sequence identity thresholds to control redundancy and ensure robust evaluation:
+
+- **Training/validation data:** sequences with less than **95% identity** to each other  
+  This dataset subset contains closely related sequences but filters out near-identical copies, providing a broad but non-redundant training set.
+
+- **Testing data:** sequences with less than **40% identity** to each other  
+  This subset contains more diverse sequences, with low sequence identity, offering a challenging test set that evaluates the generalization ability of the models on distant homologs.
+
+Our pipeline begins by extracting protein sequences from the SCOPe database, a widely used resource for hierarchical protein structural classification. We preprocess these sequences to extract meaningful labels such as SCOPe classes and families. Sequence filtering is applied to ensure high-quality inputs, which helps in achieving robust model performance across diverse protein families.
+
 
 - **Embedding Generation with ESM-2:**  
   Using the ESM-2 pretrained transformer model, we convert protein sequences into dense, informative embeddings. Due to resource constraints, we work on a representative subset (~5-15%) of the full dataset to balance computational cost and performance.

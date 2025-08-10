@@ -31,10 +31,10 @@ In this project, we leverage recent advances in protein language models—specif
 ![ROC Curves](roccurves.png)
 
 ### True Classes vs Predicted Classes
-![True vs Predicted Classes](images/true_vs_predicted_classes.png)
+![True vs Predicted Classes](truepredclasses.png)
 
 ### Web Interface for Protein Family Classification
-![Gradio Interface](images/interface_screenshot.png)
+![Gradio Interface](interface.png)
 
 
 - **Robustness Testing:**  

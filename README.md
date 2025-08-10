@@ -25,6 +25,18 @@ In this project, we leverage recent advances in protein language models—specif
 - **Performance Evaluation:**  
   Models are evaluated on metrics such as accuracy, precision, recall, and F1-score. Visualization techniques like t-SNE help illustrate the embedding space and class separability. Confusion matrices and ROC curves provide deeper insights into classification performance.
 
+## Visualizations and Interface
+
+### ROC Curves per Class
+![ROC Curves](images/roc_curves.png)
+
+### True Classes vs Predicted Classes
+![True vs Predicted Classes](images/true_vs_predicted_classes.png)
+
+### Web Interface for Protein Family Classification
+![Gradio Interface](images/interface_screenshot.png)
+
+
 - **Robustness Testing:**  
   We assess model generalization on independent test sets with reduced sequence similarity (e.g., 40% similarity threshold datasets) to evaluate robustness against overfitting.
 
